@@ -3,7 +3,7 @@ from wrangling_scripts.stravaAPI import get_data
 import plotly.graph_objs as go
 
 # Prepare the plotly visualizations
-df_club = get_data()
+data = get_data()
 
 
 
@@ -20,7 +20,7 @@ def return_figures():
 
 # first chart plots total workouts by each member, of the last 60
 
-    who_counts = df_club['who'].value_counts()
+    who_counts = data['who'].value_counts()
     who_vals = []
     for i in who_counts.items():
         who_vals.append(i[0])
@@ -39,7 +39,7 @@ def return_figures():
                       )
 
 # second chart plots total lengths of workouts by each member, of the last 60
-    who_time = df_club.groupby(["who"]).sum()["moving_time"]
+    who_time = data.groupby(["who"]).sum()["moving_time"]
 
     who_vals = []
     for i in who_time.items():
@@ -49,7 +49,6 @@ def return_figures():
     for i in who_time.items():
         time =  i[1]/60
         who_time_clean.append(time)
-    who_time_clean
 
     graph_two = []
     graph_two.append(
@@ -66,7 +65,7 @@ def return_figures():
 
 # third chart - whos been doing the most strength training ?
     type = ["WeightTraining", "Workout"]
-    df_workouts = df_club[df_club.type.isin(type)]
+    df_workouts = data[data.type.isin(type)]
 
     who_counts = df_workouts['who'].value_counts()
     who_vals = []
