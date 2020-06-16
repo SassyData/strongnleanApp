@@ -1,12 +1,14 @@
 from myapp import app
 import json, plotly
 from flask import render_template
+from wrangling_scripts.stravaAPI import get_data
 from wrangling_scripts.wrangle_data import return_figures
 
 @app.route('/')
 @app.route('/index')
 def index():
 
+    data = get_data()
     figures = return_figures()
 
     # plot ids for the html id tag
