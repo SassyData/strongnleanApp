@@ -3,7 +3,7 @@ from wrangling_scripts.stravaAPI import get_data
 import plotly.graph_objs as go
 
 # Prepare the plotly visualizations
-data = get_data()
+df_club = get_data()
 
 
 
@@ -67,7 +67,6 @@ def return_figures():
 # third chart - whos been doing the most strength training ?
     type = ["WeightTraining", "Workout"]
     df_workouts = df_club[df_club.type.isin(type)]
-    df_workouts.head()
 
     who_counts = df_workouts['who'].value_counts()
     who_vals = []
@@ -127,6 +126,4 @@ def return_figures():
 
     return figures
 
-tmp = return_figures()
-print(tmp[1])
 
