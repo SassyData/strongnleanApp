@@ -1,22 +1,34 @@
-# Link to Webapp [https://world-bank-dashboard-api.herokuapp.com](https://world-bank-dashboard-api.herokuapp.com)
+# Link to Strong & Lean App [https://strongleanapp.herokuapp.com/](https://strongleanapp.herokuapp.com/)
 
-# World Bank API Data Dashboard 
+Strong & Lean is a Strava club, where members are actively participating 
+in an 8 week workout challenge from YouTube channel Sarah's Day. This 
+dashboard is aimed at tracking activity of the club members. 
 
-This is a flask app that visualizes data from the world bank API. Data is
-pulled directly from the API and then visualized using Plotly.
+## Strong & Lean Strava Club, API Data Dashboard 
 
-This is a project in development for the Udacity Data Scientist Nanodegree. 
+This is a flask app that visualizes data from the Strava API. Data is
+pulled directly from the API and then visualized using Plotly. 
+
+Given recent changes in the Strava Club API only very limited data is 
+available now and therefore significant improvements in this dashboard 
+could be made by manually authorising each member, to collect their full
+workout data.
+
+Strava API Resources
+1. [Strava developers page](https://developers.strava.com) 
+2. [YouTube tutorial on getting authorisation tokens](https://youtu.be/sgscChKfGyg)
 
 ## Getting Started 
 
-This flask app can be used as a template for visualizing your own data. Use
-the template to enhance your professional portfolio. 
+This flask app can be used as a template for visualizing other data or 
+the basis from which to build out . Use the template to enhance your 
+professional portfolio. 
 
 ## Prerequisites
 
 To install the flask app, you need:
 - python3
-- python packages in the requirements.txt file
+- all python packages in the requirements.txt file
  
  Install the packages with
 ``` 
@@ -26,4 +38,4 @@ To install the flask app, you need:
 ## Installing
 
 On a MacOS/linux system, installation is easy. Open a terminal, and go into 
-the directory with the flask app files. Run `python worldbank.py` in the terminal.
+the directory with the flask app files. Run `python strongleanapp.py` in the terminal.
