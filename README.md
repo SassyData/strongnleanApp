@@ -7,7 +7,8 @@ dashboard is aimed at tracking activity of the club members.
 ## Strong & Lean Strava Club, API Data Dashboard 
 
 This is a flask app that visualizes data from the Strava API. Data is
-pulled directly from the API and then visualized using Plotly. 
+pulled directly from the API and then visualized using Plotly (from the 
+[Udacity dashboard template](https://github.com/udacity/DSND_Term2/tree/master/lessons/WebDevelopment/AdvancedDataDashboardCode/world_bank_api_dashboard)).
 
 Given recent changes in the Strava Club API only very limited data is 
 available now and therefore significant improvements in this dashboard 

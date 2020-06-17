@@ -25,7 +25,7 @@ def get_data():
     # print("Access Token = {}\n".format(access_token))
 
     header = {'Authorization': 'Bearer ' + access_token}
-    param = {'per_page': 20, 'page': 1}
+    param = {'per_page': 60, 'page': 1}
     my_dataset = requests.get(activites_url, headers=header, params=param).json()
 
     # Create df of the data set

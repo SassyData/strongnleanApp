@@ -35,7 +35,7 @@ def return_figures():
 
     layout_one = dict(title="Who's done the most workouts overall?",
                       xaxis=dict(title='Who'),
-                      yaxis=dict(title='Split of the past 60 workouts'),
+                      yaxis=dict(title='60 most recent workouts'),
                       )
 
 # second chart plots total lengths of workouts by each member, of the last 60
@@ -82,7 +82,7 @@ def return_figures():
 
     layout_three = dict(title="Who's done the most strength training?",
                         xaxis=dict(title='Who'),
-                        yaxis=dict(title='Split of the past 60 workouts'),
+                        yaxis=dict(title='60 most recent workouts'),
                         )
 
 # fourth chart - shows rural population vs arable land
@@ -111,7 +111,7 @@ def return_figures():
 
     graph_four = [trace1, trace2, trace3]
 
-    layout_four = dict(title='Workouts increase steadily per week',
+    layout_four = dict(title='Workouts will increase steadily each week',
                        xaxis=dict(title='Week'),
                        yaxis=dict(title='Total workouts, cumulative'),
                        )
